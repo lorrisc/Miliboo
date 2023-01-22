@@ -1,0 +1,69 @@
+#pageAccount__menu {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+#pageAccount__menu>article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+#pageAccount__menu>article>div {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #dfdede;
+    border-radius: 5px;
+}
+#pageAccount__menu>article>h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+#pageAccount__menu>article>div a {
+    padding: 15px 3%;
+    border-bottom: solid 1px #dfdede;
+    font-size: 0.85em;
+    color: black;
+    border-radius: 5px;
+}
+#pageAccount__menu>article>div a:last-child {
+    border-bottom: none;
+}
+
+
+/***************** LINK ANIAMTION */
+#pageAccount__menu a:hover,#pageAccount__menu a:focus{
+    background: #dfdede;
+}
+#pageAccount__menu__logout a:hover,#pageAccount__menu__logout a:focus{
+    background: #e7d1d1;
+    color: #510f0f;
+}
+
+#interrogationaideConn4{
+    transform: translate(37%, -65%) scale(0.39);
+}
+
+#helpConnCompte4{
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    background: whitesmoke;
+    transform: translate(17vw, -5vh);
+    z-index: 1100000;
+    border: solid 2px rgb(180, 179, 179);
+    width: 20vw;
+    padding: 2vw;
+}
+
+#helpConnCompte4.active{
+    display: flex;
+}
+
+
+#accountmenucat__container{
+    display: inline-block;
+}

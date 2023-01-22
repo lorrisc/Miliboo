@@ -1,0 +1,19 @@
+#pageBoutiquePro.principalContainer {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+form#addboutique {
+    margin: 25px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+form#addboutique > div {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+form #pageBoutiquePro__infosupaddress input,form #pageBoutiquePro__infosupaddress select {
+    margin: 5px 0;
+}

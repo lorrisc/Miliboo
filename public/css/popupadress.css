@@ -1,0 +1,52 @@
+.popupadress {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 100px;
+    border-radius: 10px;
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    display: none;
+}
+.popupadress.active {
+    display: flex;
+}
+.popupadress div {
+    margin: 10px;
+}
+.popupadress div input {
+    margin-right: 10px;
+}
+.popupadress div label {
+    font-family: MontserraRegular, sans-serif;
+}
+.popupadress h2 {
+    font-size: 1em;
+    text-align: center;
+    font-family: MontserraRegular, sans-serif;
+}
+.popupadress .normalbutton {
+    margin: 35px auto 0 auto;
+    background: #198655;
+    text-align: center;
+    font-family: MontserraRegular, sans-serif;;
+}
+.popupadress .normalbutton:hover,
+.popupadress .normalbutton:focus {
+    background: #157347;
+}
+
+
+.toplinepopupadress{
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.toplinepopupadress .closebutton{
+    margin-left: 35px;
+    margin-top: 5px;
+}

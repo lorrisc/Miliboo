@@ -1,0 +1,112 @@
+/* filter result */
+#filterconsults {
+    display: flex;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+#filterconsults > section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+}
+#filterconsults label {
+    font-size: 0.9em;
+    font-family: MontserraBold, sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+table
+{
+    border: 1px solid #3d91c9;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table {
+    background: #edf5f8;
+}
+
+table td{
+    border: 1px solid #28282b;
+    padding: 3px 2px;
+    border: 1px solid #a9b0b9;
+}
+
+table #fusebutton{
+    text-align: center;
+    height: 30px;
+}
+
+table #fusebutton button
+{
+    width: 80%;
+    background-color: #74b6e2;
+    border-radius: 10px;
+    height: 25px;
+}
+
+
+table td img{
+    max-width: 300px;
+}
+
+table #limage{
+    width: 300px;
+}
+
+table th{
+    border: 1px solid #000000;
+    background-color: #858ba0;
+    padding: 3px 2px;
+}
+
+#soustable td img{
+    max-width: 180px;
+}
+#soustable #limage_c{
+    width: 180px;
+}
+
+#soustable{
+    width: 92%;
+    margin-left: 144px;
+    padding-right: 144px;
+    border: 0px;
+}
+
+#soustable th{
+    border: 0px;
+    background-color: #f4f7fa;
+    padding: 3px 2px;
+}
+
+#soustable td{
+    border: 0px;
+}
+
+#soustable tr:nth-child(odd) {
+    background: #edf5f8;
+}
+
+#soustable tr:nth-child(even) {
+    background: #f8fffe;
+}
+
+
+
+
+#pageConsultation.principalContainer {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h3{
+    margin-bottom: 20px;
+}

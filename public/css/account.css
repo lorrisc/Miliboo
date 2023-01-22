@@ -1,0 +1,20 @@
+#pageAccount {
+    display: flex;
+    padding: 50px 50px;
+    justify-content: space-between;
+}
+
+#pageAccount > section:nth-child(2) {
+    width: 72%;
+}
+
+#pageAccount h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#pageAccount h1 span {
+    font-weight: bold;
+}

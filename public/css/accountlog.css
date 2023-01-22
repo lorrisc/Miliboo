@@ -1,0 +1,323 @@
+#pageConnection.principalContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+#pageConnection.principalContainer h1 {
+    margin: 50px 0;
+}
+
+#pageConnection.principalContainer #formContainer {
+    display: flex;
+}
+
+#pageConnection.principalContainer #formContainer form,
+div#signupbase {
+    display: flex;
+    flex-direction: column;
+}
+
+#pageConnection.principalContainer #formContainer form:first-child {
+    margin-right: 300px;
+}
+
+form .accountContainerTitle {
+    display: flex;
+    align-items: center;
+}
+
+form .accountContainerTitle h2 {
+    font-size: 1em;
+}
+
+form .accountContainerTitle p {
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+#pageConnection form > input,
+#pageConnection form #signupbase > input {
+    /* padding: 17px 10px;
+    border-radius: 5px;
+    border: solid 1px #dfdede; */
+    margin: 15px 0;
+    width: 30vw;
+    /* font-size: 1em; */
+}
+
+#leftCreateAccount #informationAccountSignup h3 {
+    font-size: 0.8em;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+#leftCreateAccount #informationAccountSignup p {
+    font-size: 0.7em;
+    font-weight: lighter;
+    margin: 4px 0;
+}
+
+.largebutton {
+    margin: 35px auto 0 auto;
+}
+
+form button[type="submit"]:hover,
+form button[type="submit"]:focus,
+div#displayPopupNewAccount:hover,
+div#displayPopupNewAccount:focus,
+section#signupPopup button[type="submit"]:hover,
+section#signupPopup button[type="submit"]:focus {
+    background: #3b3e42;
+}
+
+#savelogContainer {
+    display: flex;
+}
+
+#savelogContainer label {
+    margin-left: 10px;
+    font-size: 0.8em;
+}
+
+#forgotpasswordbutton {
+    width: fit-content;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+/***************** POPUP CREATE ACCOUNT */
+
+#pageConnection.principalContainer #formContainer.desactive {
+    display: none;
+}
+
+#signupPopup {
+    display: none;
+}
+
+#signupPopup.active {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#signupPopup > #signupPopup__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#signupPopup h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#signupPopup__top > article {
+    width: 48%;
+}
+
+#signupPopup input[type="text"],#signupPopup input[type="email"],#signupPopup input[type="email"] {
+    width: 94%;
+}
+
+#signupPopup__password {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#signupPopup__password input {
+    width: 43%;
+}
+
+#passwordValidationText {
+    width: 49%;
+    border: solid 1px #dfdede;
+    border-radius: 5px;
+    margin: 8px 0 50px 0;
+}
+
+#passwordValidationText p {
+    padding: 12px 3%;
+    border-bottom: solid 1px #dfdede;
+    font-size: 0.8em;
+}
+
+#supplement__newsletter,
+#supplement__partnernewsletter {
+    font-size: 0.8em;
+    margin: 18px 0;
+    display: flex;
+    align-items: center;
+}
+
+#supplement__newsletter input,
+#supplement__partnernewsletter input {
+    margin-right: 8px;
+}
+
+
+
+#leftSignupPopup__proForm {
+    border: solid 1px #dfdede;
+    width: 96%;
+    padding: 2%;
+    border-radius: 5px;
+    display: none;
+}
+#leftSignupPopup__generalForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#leftSignupPopup__generalForm #generalForm__generalinfo,
+#leftSignupPopup__generalForm #generalForm__infosupaddress {
+    display: flex;
+    justify-content: space-between;
+}
+
+#leftSignupPopup__generalForm #generalForm__generalinfo input#namuser,
+#leftSignupPopup__generalForm #generalForm__generalinfo input#firstnamuser,
+#leftSignupPopup__generalForm #generalForm__generalinfo input#firstnamuser {
+    width: 34%;
+}
+
+#leftSignupPopup__generalForm #generalForm__generalinfo select,
+#leftSignupPopup__generalForm #generalForm__infosupaddress select {
+    width: 18%;
+}
+
+#leftSignupPopup__generalForm #generalForm__infosupaddress input#postalzip,
+#leftSignupPopup__generalForm #generalForm__infosupaddress input#city {
+    width: 30%;
+}
+
+#leftSignupPopup__generalForm #generalForm__infosupaddress select {
+    width: 25%;
+}
+
+#generalForm__tel {
+    margin: 8px 0;
+}
+
+#leftSignupPopup__generalForm input#userbirthday {
+    width: 30%;
+}
+
+#generalForm__tel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#generalForm__tel div {
+    display: flex;
+    align-items: center;
+    width: 48%;
+}
+
+#generalForm__tel div input {
+    width: 100%;
+    padding: 10px 3%;
+    margin: 0;
+    margin-left: 10px;
+}
+
+#generalForm__tel div label {
+    margin: 0;
+    height: fit-content;
+}
+
+
+
+#globaladress{
+    margin-top: 20px;
+}
+#generalForm__infosupaddress{
+    margin-bottom: 20px;
+}
+
+#interrogationaideCree {
+    display: inline-block;
+    transform: scale(0.39);
+    display: flex;
+}
+
+#helpCreeCompte{
+    justify-content: space-between;
+    display: none;
+    position: absolute;
+    background: whitesmoke;
+    transform: translate(21vw, 2vh);
+    z-index: 1100000;
+    border: solid 2px rgb(180, 179, 179);
+    width: 20vw;
+    padding: 2vw;
+}
+
+#helpCreeCompte.active {
+    display: flex;
+}
+
+
+#interrogationaideConn{
+    display: inline-block;
+    transform: scale(0.39);
+    display: flex;
+}
+
+#helpConnCompte{
+    justify-content: space-between;
+    display: none;
+    position: absolute;
+    background: whitesmoke;
+    transform: translate(17vw, 2vh);
+    z-index: 1100000;
+    border: solid 2px rgb(180, 179, 179);
+    width: 20vw;
+    padding: 2vw;
+}
+
+#helpConnCompte.active{
+    display: flex;
+}
+
+#interrogationaideConne{
+    position: absolute;
+    width: max-content;
+    display: flex;
+    top:84%;
+    left: 49%;
+    transform: scale(0.39);
+    
+
+}
+
+#helpConnComptee{
+    justify-content: space-between;
+    display: none;
+    position: absolute;
+    background: whitesmoke;
+    top:89%;
+    left: 51%;
+    
+    
+    z-index: 1100000;
+    border: solid 2px rgb(180, 179, 179);
+    width: 20vw;
+    padding: 2vw;
+}
+
+#helpConnComptee.active{
+    display: block;
+}
+
+#rouge{
+    color: rgb(116, 7, 7);
+}
+
+#pBold{
+    font-weight:bolder;
+}

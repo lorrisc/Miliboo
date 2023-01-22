@@ -1,0 +1,35 @@
+#pageBoutique.principalContainer {
+    padding: 20px 50px;
+    font-family: MontserraRegular, sans-serif;
+}
+#pageBoutique__boutiques {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#pageBoutique .boutique {
+    display: flex;
+    flex-direction: column;
+    padding: 0 65px;
+}
+#pageBoutique .boutique .boutique__titre {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+#pageBoutique .boutique .boutique__titre h2 {
+    margin-left: 10px;
+    font-family: MontserraBold, sans-serif;
+}
+
+.boutique__contact,
+.boutique__acces {
+    margin: 25px 0;
+}
+.boutique__contact H3,
+.boutique__acces h3 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    font-family: MontserraBold, sans-serif;
+}

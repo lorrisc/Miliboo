@@ -1,0 +1,92 @@
+/******************** BANDEAU SERVICES */
+
+#footer__services {
+    /* margin-top: 100px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 120px;
+    background: #b7b9a6;
+    font-family: MontserraRegular, sans-serif;
+}
+#footer__services #footer__services__text p {
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 0;
+}
+#footer__services #footer__services__text p:last-child {
+    font-weight: bold;
+}
+#footer__services > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer__services > div p {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+#footer__services > div p span {
+    font-weight: bold;
+}
+#footer__services img {
+    width: 55px;
+}
+
+/******************** FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px 20px 80px;
+    font-family: MontserraRegular, sans-serif;
+}
+footer > section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer > section article {
+    display: flex;
+    flex-direction: column;
+}
+footer section h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+footer section article a {
+    color: #6c757d;
+    font-size: 0.8em;
+    padding: 6px 0;
+}
+.footerdessous {
+    margin-top: 60px;
+}
+
+#footer__top > img {
+    width: 280px;
+}
+
+#footer__bottom {
+    margin-top: 80px;
+}
+#footer__bottom #footer__bottom__paiement img {
+    width: 500px;
+}
+
+#footer__bottom__socialnetwork > div{
+    display: flex;
+}
+#footer__bottom #footer__bottom__socialnetwork a {
+    width: 20px;
+    margin-right: 5px;
+    padding: 10px;
+}
+#footer__bottom #footer__bottom__socialnetwork img {
+    width: 100%;
+    transition: transform ease-out 800ms;
+}
+#footer__bottom #footer__bottom__socialnetwork img:hover {
+    transform: rotate(360deg);
+}

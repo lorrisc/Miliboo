@@ -1,0 +1,220 @@
+#pageResult.principalContainer {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pageResult #pathCategory {
+    font-size: 0.75em;
+}
+
+/* presentation category */
+#pageResult #topresult {
+    display: flex;
+    margin: 60px 0 100px 0;
+    justify-content: flex-start;
+}
+
+#pageResult #topresult div:first-child {
+    width: 45%;
+}
+#pageResult #topresult div:first-child h1 {
+    font-size: 1.7em;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+#pageResult #topresult div:first-child p {
+    font-size: 0.85em;
+}
+
+#pageResult #topresult div:last-child {
+    width: 35%;
+    margin: auto;
+}
+#pageResult #topresult div:last-child img {
+    width: 100%;
+}
+
+/***************** RESULT */
+#pageResult #results {
+    display: flex;
+    flex-direction: column;
+}
+
+/***** TOP LINE RESULT */
+#resultsTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#resultsTop p {
+    font-size: 0.8em;
+}
+#resultsTop span {
+    font-family: MontserraBold, sans-serif;
+    font-weight: bold;
+    margin-right: 5px;
+}
+#resultsTop select {
+    padding: 6px 13px;
+}
+
+/***** PRODUCT GRID */
+#results__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#results__container > article {
+    width: 25%;
+    padding: 50px 0;
+}
+article.productValue {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* image */
+.imgcontainer {
+    width: 100%;
+}
+
+.imgmention {
+    width: 25%;
+    padding-left: 70px;
+}
+
+.productValue img {
+    width: 100%;
+    transform: scale(0.9);
+    margin: 40px 0;
+    transition: transform ease-out 250ms;
+}
+.productValue:hover img {
+    transform: scale(1);
+}
+
+p.product__title {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+div.product__infoSupp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p.infoSupp__expeditionInfo {
+    font-size: 0.8em;
+    color: #198754;
+}
+div.infoSupp__noteAvis {
+    font-size: 0.7em;
+}
+
+/* price & color */
+div.product__bottom {
+    margin-top: 25px;
+}
+p.productPrice {
+    font-weight: 900;
+    font-family: Montserra, sans-serif;
+    margin-bottom: 10px;
+}
+div.productColor {
+    display: flex;
+    align-items: center;
+}
+/* product color available */
+.color {
+    width: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 02px 2px;
+    border: solid 1px grey;
+}
+.morecolor {
+    margin-left: 10px;
+}
+
+.avantreduc {
+    color: #6c757d;
+    font-weight: 100;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+.promopercent {
+    background: #212529;
+    width: fit-content;
+    color: #ffffff;
+    padding: 6px 12px;
+    margin: 8px 0;
+    font-family: Montserra, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* filter result */
+#filterresult {
+    display: flex;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+#filterresult > section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    margin: 20px 0;
+}
+#filterresult label {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#filtreprice {
+    display: flex;
+}
+#filtreprice input {
+    width: 80px;
+}
+#filtreprice > div:first-child {
+    margin-right: 15px;
+}
+
+/* RESPONSIVE  */
+@media only screen and (max-width: 1500px) {
+    #pageResult.principalContainer {
+        padding: 20px 10px;
+    }
+    article.productValue {
+        width: 95%;
+    }
+    .productValue img {
+        transform: scale(1);
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #results__container > article {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #results__container > article {
+        width: 50%;
+        padding: 25px 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #results__container > article {
+        width: 100%;
+        padding: 15px 0;
+    }
+}

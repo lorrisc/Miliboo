@@ -1,0 +1,13 @@
+#emptyinfo{
+    margin: auto;
+    width: fit-content;
+    padding: 50px;
+}
+
+#interrogationaideConn{
+    transform: translate(57vw, -9.8vh) scale(0.39);
+}
+
+#helpCreeCompte{
+    transform: translate(57vw, -7vh);
+}

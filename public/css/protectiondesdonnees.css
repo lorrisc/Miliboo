@@ -1,0 +1,83 @@
+#lasection{
+    margin-left: 12%;
+    margin-top: 100px;
+}
+
+section.protec{
+    margin-bottom: 5%;
+}
+
+section#titres ul a li{
+    margin-bottom: 20px;
+}
+
+a{
+    color: black;
+}
+
+a:visited{
+    color: rgb(109, 109, 109);
+}
+
+#titres{
+    text-decoration: underline;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+table {
+    text-align: center;
+    table-layout: fixed;
+    width: 40%;
+    border-collapse: collapse;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+#grande2{
+    width: 60%;
+}
+  
+a#mail:hover{
+    color: rgb(137, 137, 137);
+}
+
+thead th {
+    background-color: rgb(220, 220, 220);
+    width: 20%;
+}
+
+thead th#grand {
+    width: 30%;
+}
+  
+th{
+    padding: 20px;
+}
+
+td {
+    padding: 20px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+ul li{
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.left{
+    text-align: left;
+}

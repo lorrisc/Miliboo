@@ -1,0 +1,159 @@
+.popup {
+    display: none;
+}
+.popup.display {
+    display: block;
+}
+.infoperso__container__cadre {
+    border: solid 1px #dfdede;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.infoperso__container__cadre .container__topline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.infoperso__container__cadre p {
+    margin: 9px 0;
+}
+.infoperso__container__cadre p,
+.infoperso__container__cadre label,
+.infoperso__container__cadre > input {
+    font-size: 0.85em;
+}
+
+#facturation {
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 0.9em;
+}
+h3,
+.uppercase {
+    text-transform: uppercase;
+}
+.textMarginRight {
+    margin-right: 5px;
+}
+
+.infopersodelivery__container__address {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 60px 0;
+
+    border-top: solid 1px #dfdede;
+}
+.infopersodelivery__container__address .address__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.address__button button {
+    margin: 4px 0;
+    width: 100%;
+}
+
+/*************** POPUP */
+.popup {
+    z-index: 999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px 60px;
+    border-radius: 5px;
+    width: 40vw;
+}
+.popup > form {
+    display: flex;
+    flex-direction: column;
+}
+/* title */
+.popup__title {
+    border-bottom: solid 1px #dfdede;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popup__title h2 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+/* general */
+.popup__container {
+    display: flex;
+    flex-direction: column;
+}
+.popup__container .line {
+    display: flex;
+    justify-content: space-between;
+}
+.formcivility,
+.formcountry {
+    width: 20%;
+}
+.line.generalinfo input,
+.formadress input {
+    width: 33%;
+}
+#edit__birthday {
+    width: 30%;
+}
+.formtel {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.formtel > div {
+    display: flex;
+    align-items: center;
+    width: 48%;
+}
+.formtel > div input {
+    margin-left: 10px;
+    width: 100%;
+}
+.formadress input:nth-child(2) {
+    text-transform: uppercase;
+}
+/* validationbutton */
+.infoperso__popup__validate {
+    border-top: solid 1px #dfdede;
+    margin-top: 50px;
+    display: flex;
+}
+.infoperso__popup__validate button.normalbutton {
+    background: #198655;
+    margin: 20px 0 20px auto;
+}
+.infoperso__popup__validate button.normalbutton:hover,
+.infoperso__popup__validate button.normalbutton:focus {
+    background: #157347;
+}
+
+.addressname {
+    display: flex;
+    flex-direction: column;
+}
+.addressname .largeinput {
+    margin-bottom: 2px;
+}
+.addressname p {
+    margin-top: 0px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+

@@ -1,0 +1,73 @@
+
+.color.color1 {
+    background-color: lightblue;
+}
+.color.color2 {
+    background-color: darkblue;
+}
+.color.color3 {
+    background-color: purple;
+}
+.color.color4 {
+    background-color: indigo;
+}
+.color.color5 {
+    background-color: pink;
+}
+.color.color6 {
+    background-color: red;
+}
+.color.color7 {
+    background-color: orange;
+}
+.color.color8 {
+    background-color: yellow;
+}
+.color.color9 {
+    background-color: khaki;
+}
+.color.color10 {
+    background-color: green;
+}
+.color.color11 {
+    background-color: #5b3c11;
+}
+.color.color12 {
+    background-color: grey;
+}
+.color.color13 {
+    background-color: grey;
+}
+.color.color14 {
+    background-color: beige;
+}
+.color.color15 {
+    background-color: whitesmoke;
+}
+.color.color16 {
+    background-color: black;
+}
+.color.color17 {
+    background-color: #68626b;
+}
+.color.color18 {
+    background-color: darkgray;
+}
+.color.color19 {
+    background-color: lightgrey;
+}
+.color.color20 {
+    background-color: #1d4851;
+}
+.color.color21 {
+    background-image: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+    );
+}

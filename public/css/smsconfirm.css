@@ -1,0 +1,32 @@
+#numero{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: bold;
+    font-size: large;
+}
+
+#sub{
+    height: 45px;
+    width: 320px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+#subbutton{
+    height: 40px;
+    width: 270px;
+    background-color: black;
+    color: white;
+    font-size: bold;
+    margin-bottom: 75px;
+}
+
+div
+{
+    text-align: center;
+}

@@ -1,0 +1,239 @@
+/********************************** GENERIC HEADER */
+
+@font-face {
+    font-family: "ConcertOne";
+    src: url("../assets/fonts/Concert_One/ConcertOne-Regular.ttf");
+    font-display: swap;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    z-index: 100;
+}
+
+header #topinfo {
+    padding: 10px;
+    background: #b7b9a6;
+    text-align: center;
+    font-family: MontserraRegular, sans-serif;
+    color: #212529;
+    font-size: 1.1em;
+}
+
+/****************** TOP (LOGO - SEARCHBAR - BUTTON) */
+header #top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 50px;
+    height: 50px;
+}
+header #top section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header #top section * {
+    height: 100%;
+}
+
+/*LOGO*/
+header #top section#top__left #title {
+    margin-right: 50px;
+}
+/* SEARCHBAR */
+header #top section#top__left #searchBar {
+    width: 45vw;
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+}
+header #top section#top__left #searchBar:focus {
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+}
+/* RIGHT BUTTON */
+header #top section#top__right a {
+    margin-left: 10px;
+}
+
+/* hover information */
+header #top section#top__right a > div {
+    height: auto;
+}
+header #top section .top__righticon__informations {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-family: MontserraRegular, sans-serif;
+    font-size: 0.9em;
+}
+header #top section .top__righticon__informations.active {
+    display: flex;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #202429 transparent;
+}
+.top__righticon__informations p {
+    padding: 5px 10px;
+    background: #202429;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.8em;
+}
+
+/****************** FIRST BIG NAVBAR */
+header nav#generalNavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    font-family: MontserraRegular, sans-serif;
+}
+header nav#generalNavBar a {
+    cursor: pointer;
+}
+/* LEFT - GENERAL PRODUCT CATEGORYY */
+header nav#generalNavBar section:first-child a {
+    padding: 10px 20px;
+    margin: auto 0;
+    font-size: 1.3em;
+    opacity: 0.7;
+    color: black;
+    transition: opacity 400ms ease-out;
+}
+header nav#generalNavBar section:first-child a:hover {
+    opacity: 0.9;
+}
+
+header nav#generalNavBar section:first-child a.active {
+    opacity: 1;
+}
+header nav#generalNavBar section:first-child a.blue {
+    opacity: 1;
+    color: #063d7c;
+}
+
+/* RIGHT - USELESS LINKS */
+header nav#generalNavBar section:last-child a {
+    margin: auto 0;
+    padding: 7px 14px;
+    font-size: 1.1em;
+    color: black;
+}
+
+/****************** PRODUCT CATEGORY NAVBAR */
+header nav#navCat {
+    display: flex;
+    flex-direction: column;
+}
+
+/* VISIBLE CONTAINER */
+#navCat__top {
+    display: flex;
+    background: #f1f1f1;
+    padding: 0px 50px;
+    height: 55px;
+}
+#navCat__top button {
+    padding: 20px 20px;
+    font-size: 0.8em;
+    opacity: 0.7;
+    transition: opacity 400ms ease-out;
+}
+
+/* HIDDEN CONTAINER */
+#navCat__hiddenCats {
+    display: none;
+    background: white;
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    transform: translate(0, 55px);
+    z-index: 98;
+}
+#navCat__hiddenCats.active {
+    display: block;
+}
+
+#navCat__hiddenCats > article {
+    display: none;
+    justify-content: space-between;
+}
+#navCat__hiddenCats > article.active {
+    display: flex;
+}
+.principalContainer.navbarIsActive::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    background: black;
+    opacity: 0.8;
+    z-index: 99;
+}
+
+#navCat__hiddenCats > article div:first-child {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 35vh;
+    padding: 40px 50px;
+}
+#navCat__hiddenCats > article div:first-child a {
+    text-align: start;
+    padding: 10px 20px;
+    margin-right: 100px;
+    opacity: 0.7;
+    transition: opacity 100ms ease-out;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.8em;
+}
+#navCat__hiddenCats > article div:first-child a.categoryTitle {
+    opacity: 0.8;
+    font-weight: 600;
+}
+#navCat__hiddenCats > article div:first-child a:hover {
+    opacity: 1;
+}
+#navCat__hiddenCats > article div:last-child {
+    width: 50%;
+}
+#navCat__hiddenCats > article div:last-child img {
+    height: 50vh;
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+}
+
+/* HEADER NAV HOVER BUTTON */
+header nav#generalNavBar section:first-child a:hover,
+header nav#navCat section a:hover {
+    opacity: 1;
+}
+
+header #top section #marketnumber {
+    background: black;
+    width: 20px;
+    height: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    position: relative;
+    left: -20px;
+    top: 10px;
+    font-size: 0.7em;
+    font-family: Montserra, sans-serif;
+    font-weight: bolder;
+}
