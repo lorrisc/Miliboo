@@ -1,6 +1,6 @@
 # Miliboo
 
-## Présentatin
+## Présentation
 
 Miliboo est une entreprise de vente de meubles en ligne. Le but de notre projet universitaire était de développer le site web ainsi que tous les autres aspects nécessaires pour une vente en ligne sécurisée (base de données, rendu droit, cryptographie, etc.).
 Np : Miliboo est une entreprise qui existe réelement, mais nous n'étions pas en relation avec eux, c'est un projet fictif.
